@@ -16,9 +16,11 @@ export class AppComponent {
   constructor(private _msgService: MessagesService) {
     _msgService = new MessagesService();
     this.messages = _msgService.generateMessages();
-    // for(var i = 0; i < this.messages.messages.length; i++) {
-    //   console.log(this.messages.messages[i]);
-    // }
+  }
+
+  formatTimestamp(num: number) {
+    let date = new Date(num);
+    return date.toLocaleDateString() + " " + date.toLocaleTimeString();
   }
 
 }

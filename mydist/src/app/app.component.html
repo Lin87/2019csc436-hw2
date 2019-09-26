@@ -6,7 +6,7 @@
   <div *ngFor="let msg of messages.messages">
     <div>
       <div class="text">{{msg.text}}</div>
-      <div class="text">{{msg.timestamp}}</div>
+      <div class="text">{{formatTimestamp(msg.timestamp)}}</div>
     </div>
   </div>
 </div>
