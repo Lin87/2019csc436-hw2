@@ -2,3 +2,11 @@
   <app-my-image></app-my-image>
   <app-my-button></app-my-button>
 </div>
+<div>
+  <div *ngFor="let msg of messages.messages">
+    <div>
+      <div class="text">{{msg.text}}</div>
+      <div class="text">{{msg.timestamp}}</div>
+    </div>
+  </div>
+</div>
