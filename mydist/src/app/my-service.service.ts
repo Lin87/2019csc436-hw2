@@ -8,13 +8,7 @@ export class MyServiceService {
   constructor() { }
 
   likeImage(boo:Boolean) {
-
-    if (boo) {
-      return false;
-    }
-
-    return true;
-
+    return !boo;
   }
 
 }

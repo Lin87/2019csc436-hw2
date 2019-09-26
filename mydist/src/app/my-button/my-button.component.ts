@@ -17,7 +17,6 @@ export class MyButtonComponent implements OnInit {
 
   like() {
     this.isLiked = this._myService.likeImage(this.isLiked);
-    console.log(this.isLiked);
   }
 
 }
