@@ -25,7 +25,7 @@ export class MessagesService {
     ];
 
     for (var i = 0; i < msgs.length; i++) {
-      let message: Message = new Message(msgs[i], Date.now());
+      let message: Message = new Message(msgs[i], (Date.now() - ((msgs.length - i) * 110000)));
       this.messages.messages.push(message);
     }
 
