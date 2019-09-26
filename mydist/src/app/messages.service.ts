@@ -28,6 +28,9 @@ export class MessagesService {
       let message: Message = new Message(msgs[i], Date.now());
       this.messages.messages.push(message);
     }
+
+    return this.messages;
+
   }
 
 }
