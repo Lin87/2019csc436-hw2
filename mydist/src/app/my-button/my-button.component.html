@@ -1,2 +1,2 @@
-<p>Image is liked == {{isLiked}}</p>
-<p><button [ngClass]="isLiked ? 'is-liked' : ''" (click)="like()">Like!</button></p>
+<p class="text-center text-muted font-weight-light mb-2"><small>Image is liked == {{isLiked}}</small></p>
+<button type="button" class="btn btn-block btn-lg mb-3" [ngClass]="isLiked ? 'btn-success' : 'btn-secondary'" (click)="like()">Like!</button>

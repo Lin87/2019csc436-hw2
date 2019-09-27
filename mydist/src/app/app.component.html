@@ -2,15 +2,15 @@
 
   <div class="row justify-content-center">
 
-      <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
 
           <app-my-image></app-my-image>
           <app-my-button></app-my-button>
 
           <div class="list-group">
             <div class="list-group-item" *ngFor="let msg of messageBox.messages">
-              <p class="mb-1">{{msg.text}}</p>
-              <small class="text-muted">{{formatTimestamp(msg.timestamp)}}</small>
+                <small class="text-muted font-weight-light">{{formatTimestamp(msg.timestamp)}}</small>
+                <p class="mb-0">{{msg.text}}</p>
             </div>
         </div>
     
