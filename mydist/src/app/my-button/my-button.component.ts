@@ -8,7 +8,7 @@ import { MyServiceService } from '../my-service.service';
 })
 export class MyButtonComponent implements OnInit {
 
-  isLiked:Boolean = false;
+  isLiked: boolean = false;
 
   constructor(private _myService: MyServiceService) { }
 

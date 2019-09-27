@@ -2,10 +2,10 @@ import { User } from './user';
 
 export class Message {
 
-    timestamp:Number;
-    text:String;
+    timestamp: number;
+    text: string;
 
-    constructor(text: String, timestamp: number) {
+    constructor(text: string, timestamp: number) {
         this.text = text;
         this.timestamp = timestamp;
     }

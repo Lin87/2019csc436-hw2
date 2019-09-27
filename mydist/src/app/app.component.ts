@@ -11,11 +11,11 @@ import { MessagesService } from './messages.service';
 export class AppComponent {
 
   title = 'mydist';
-  messages: Messages;
+  messageBox: Messages;
 
   constructor(private _msgService: MessagesService) {
     _msgService = new MessagesService();
-    this.messages = _msgService.generateMessages();
+    this.messageBox = _msgService.generateMessages();
   }
 
   formatTimestamp(num: number) {

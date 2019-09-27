@@ -7,7 +7,7 @@ export class MyServiceService {
 
   constructor() { }
 
-  likeImage(boo:Boolean) {
+  likeImage(boo: boolean) {
     return !boo;
   }
 

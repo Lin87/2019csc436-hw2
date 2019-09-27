@@ -7,13 +7,13 @@ import { Message } from './models/message';
 })
 export class MessagesService {
 
-  messages: Messages = new Messages();
+  messageBox: Messages = new Messages();
 
   constructor() { }
 
   generateMessages() {
 
-    let msgs: Array<String> = [
+    let msgs: Array<string> = [
       "Woo Hoo",
       "Don't have a cow, man!",
       "Why you little...",
@@ -26,10 +26,10 @@ export class MessagesService {
 
     for (var i = 0; i < msgs.length; i++) {
       let message: Message = new Message(msgs[i], (Date.now() - ((msgs.length - i) * 110000)));
-      this.messages.messages.push(message);
+      this.messageBox.messages.push(message);
     }
 
-    return this.messages;
+    return this.messageBox;
 
   }
 
